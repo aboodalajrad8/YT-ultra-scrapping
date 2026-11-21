@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Only needed when the repository root is used as the document root.
+# Preferred deployment: point the virtual host directly at /public.
+RewriteRule ^$ public/ [L]
+RewriteRule (.*) public/$1 [L]

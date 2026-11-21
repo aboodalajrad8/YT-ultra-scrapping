@@ -1,0 +1,30 @@
+{
+    "name": "ytultra/ytultra-api",
+    "description": "Dependency-free PHP API that resolves direct YouTube download URLs via the unofficial ytultra.com backend.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YtUltra API contributors"
+        }
+    ],
+    "keywords": ["youtube", "download", "api", "ytultra", "php"],
+    "homepage": "https://github.com/aboodalajrad8/YT-Ultra-video-downloader",
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "YtUltra\\": "src/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S 127.0.0.1:8080 -t public public/index.php",
+        "lint": "find src public -name '*.php' -print0 | xargs -0 -n1 php -l"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

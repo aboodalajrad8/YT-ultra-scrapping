@@ -1,0 +1,12 @@
+/vendor/
+.env
+.env.*
+!.env.example
+*.log
+*.har
+www.ytultra-*
+.freebuff/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
